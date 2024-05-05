@@ -1,0 +1,29 @@
+body{
+    background: linear-gradient(25deg, #ded6f7, #b1dbf7 50%);
+   
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+#colorBox {
+    background-color: #ffffff;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+#colorCode{
+    font-size: 20px;
+}
+#copyBtn{
+    background-color: rgba(5, 1, 19, 0.925);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#copyBtn:hover{
+    background-color: rgba(0, 100, 0, 0.911);
+}
