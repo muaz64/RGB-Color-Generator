@@ -9,16 +9,16 @@
 <body>
     <h1>Random Color Generator</h1>
     <div id="colorBox"></div>
-    <p id="colorCode"></p>
-    <p id="hslCode"></p>
-    <button onclick="generateNewColor()">Generate New Color</button>
-    <button id="copyBtn">Copy Color Code</button>
-    <button id="saveBtn">Save Color</button>
-    <div id="favorites">
-        <h2>Saved Colors</h2>
-        <div id="favoriteColors"></div>
+    <p id="colorCode">RGB: </p>
+    <div class="buttons">
+        <button onclick="generateNewColor()">Generate New Color</button>
+        <button onclick="displayColorFormat('rgb')">Show RGB</button>
+        <button onclick="displayColorFormat('hex')">Show Hexadecimal</button>
+        <button onclick="displayColorFormat('hsl')">Show HSL</button>
+        <br><br>
+        <button id="copyColorBtn">Copy Color Code</button>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
