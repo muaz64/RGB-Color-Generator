@@ -1,4 +1,5 @@
 let currentColor = { r: 0, g: 0, b: 0 };
+let currentFormat = 'rgb'; // Tracks the current format (rgb, hex, hsl)
 
 const generateRGBColor = () => {
     const r = Math.floor(Math.random() * 255);
@@ -44,6 +45,7 @@ const updateColorBox = (color) => {
 
 const displayColorFormat = (format) => {
     const colorCode = document.getElementById('colorCode');
+    currentFormat = format; // Update the current format
     if (format === 'rgb') {
         colorCode.innerText = `RGB: rgb(${currentColor.r}, ${currentColor.g}, ${currentColor.b})`;
     } else if (format === 'hex') {
@@ -55,11 +57,23 @@ const displayColorFormat = (format) => {
     }
 };
 
+const copyColorCode = () => {
+    const colorCodeText = document.getElementById('colorCode').innerText.split(': ')[1]; // Extract color code
+    navigator.clipboard.writeText(colorCodeText).then(() => {
+        alert(`Copied to clipboard: ${colorCodeText}`);
+    }).catch(() => {
+        alert('Failed to copy color code.');
+    });
+};
+
 const generateNewColor = () => {
     currentColor = generateRGBColor();
     updateColorBox(currentColor);
-    displayColorFormat('rgb');
+    displayColorFormat('rgb'); // Default to RGB format
 };
+
+// Add event listener to the copy button
+document.getElementById('copyColorBtn').addEventListener('click', copyColorCode);
 
 // Initialize with a random color on page load
 generateNewColor();
