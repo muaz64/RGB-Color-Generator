@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(25deg, #ded6f7, #b1dbf7 50%);
+    background: linear-gradient(25deg, #fafafa, #ffffff 50%);
    
     align-items: center;
     min-height: 100vh;
@@ -11,6 +11,7 @@ body{
     width: 200px;
     height: 200px;
     border: 2px solid black;
+    box-shadow: 4px 4px #868282;
     margin: 0 auto;
 }
 #colorCode{
@@ -25,5 +26,5 @@ body{
     margin-top: 10px;
 }
 #copyBtn:hover{
-    background-color: rgba(0, 100, 0, 0.911);
+    background-color: rgba(0, 151, 0, 0.74);
 }
