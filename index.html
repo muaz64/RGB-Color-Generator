@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGB Color Generator</title>
+    <title>Random Color Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>RGB Color Generator</h1>
-    <div id="colorBox"> </div>
+    <h1>Random Color Generator</h1>
+    <div id="colorBox"></div>
     <p id="colorCode"></p>
-    <button onclick="generateNewColorBtn()"> Generate New Color</button><br>
+    <p id="hslCode"></p>
+    <button onclick="generateNewColor()">Generate New Color</button>
     <button id="copyBtn">Copy Color Code</button>
-
-
-
+    <button id="saveBtn">Save Color</button>
+    <div id="favorites">
+        <h2>Saved Colors</h2>
+        <div id="favoriteColors"></div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
