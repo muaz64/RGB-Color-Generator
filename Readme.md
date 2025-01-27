@@ -3,7 +3,7 @@
 
 A **Random Color Generator** application built using **HTML**, **CSS**, and **JavaScript**. This tool allows users to generate random colors and view their corresponding color codes in multiple formats.
 
-![Random Color Generator Screenshot](./Screenshot_7-1-2025_141434_127.0.0.1.jpeg)
+![Random Color Generator Screenshot](./Random%20Color%20Generator.jpeg)
 
 ## Features
 
